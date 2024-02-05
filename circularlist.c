@@ -109,55 +109,71 @@ void insertend() {
 
 }
 
-void displayall() {
-    struct node *p = HEAD;
-    if (p == NULL) {
-        printf("\nEmpty");
-        return;
-    }
 
-    while (p->NEXT != NULL) {
-        printf("%d\t", p->data);
-        p = p->NEXT;
-    }
-    printf("%d", p->data);
-}
-void deletefront()
+void list()
 {
-	struct node*tmp;
+	struct node *p;
+	if(HEAD==NULL)
+	{
+		printf("\nEmpty list");
+		return;
+	}
+	p=HEAD;
+	while(p->NEXT!=HEAD)
+	{	
+		printf("%d\t",p->data);
+		p=p->NEXT;
+	}
+	printf("%d\t",p->data);
+}
+
+void deletefront()
+{//for 0 node
+	struct node *p, *q;
 	if (HEAD==NULL)
 	{
 		printf("\nEmpty List!\n");
-		getch();
 		return;
 	}
-	tmp=HEAD;
+	//for 1 node
+	if(HEAD->NEXT==HEAD)
+	{
+		free(HEAD);
+		HEAD=NULL;
+		return;	
+	}
+	p=HEAD;
+	//for >1 node
+	while(p->NEXT!=NULL)
+	{
+		p=p->NEXT;
+	}
+	q=HEAD;
+	p->NEXT=HEAD->NEXT;
 	HEAD=HEAD->NEXT;
-	free(tmp);
+	free(q);
 }
 
 void deleteend()
 {
-	struct node*p;
+	struct node *p, *q;
 	if (HEAD==NULL)
 	{
 		printf("\nEmpty List!\n");
-		getch();
 		return;
-	}else if(HEAD->NEXT==NULL)
-	{free(HEAD);
-	HEAD=NULL;
-	return;
 	}
-	else{
-	p=HEAD;
-	while(p->NEXT->NEXT != NULL)
+	if(HEAD->NEXT==HEAD)
 	{
-	p=p->NEXT;
+		free(HEAD);
+		HEAD=NULL;
+		return;
 	}
-	free (p->NEXT);
-	p->NEXT=NULL;
-	}
+	while(p->NEXT->NEXT != HEAD)
+		{
+			p=p->NEXT;
+		}
+		free (p->NEXT);
+		p->NEXT=HEAD;
 	
 }
 
@@ -182,19 +198,17 @@ void insertafter(int k){
 	tmp1->NEXT = p;
 }
 
-void list()
-{
-	struct node *p;
-	if(HEAD==NULL)
-	{
-		printf("\nEmpty list");
-		return;
-	}
-	p=HEAD;
-	while(p->NEXT!=HEAD)
-	{	
-		printf("%d\t",p->data);
-		p=p->NEXT
-	}
-	printf("%d\t",p->data);
+
+void displayall() {
+    struct node *p = HEAD;
+    if (p == NULL) {
+        printf("\nEmpty");
+        return;
+    }
+
+    while (p->NEXT != NULL) {
+        printf("%d\t", p->data);
+        p = p->NEXT;
+    }
+    printf("%d", p->data);
 }
