@@ -32,9 +32,7 @@ void convert_to_postfix(char *infix, char *postfix) {
     int i = 0, j = 0;
 
     while (infix[i] != '\0') {
-        if (isspace(infix[i])) {
-            i++;
-        } else if (isalnum(infix[i])) {
+        if (isalnum(infix[i])) {
             postfix[j++] = infix[i++];
         } else if (infix[i] == '(') {
             push(infix[i++]);
@@ -65,8 +63,7 @@ int main() {
     char infix[SIZE], postfix[SIZE];
 
     printf("Enter the infix expression: ");
-    fgets(infix, SIZE, stdin);
-    infix[strcspn(infix, "\n")] = '\0'; // Removing newline character
+    scanf("%s", infix);
 
     convert_to_postfix(infix, postfix);
 
