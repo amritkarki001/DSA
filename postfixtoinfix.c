@@ -1,69 +1,48 @@
-//postfix to infix 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
+#include <stdbool.h>
 
-#define SIZE 50
+#define SIZE 100
 
-char stack[SIZE];
-int top = -1;
-
-void push(char ch) {
-    stack[++top] = ch;
+bool isOperand(char ch) {
+    return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
 }
 
-char pop() {
-    return stack[top--];
+void push(char stack[][SIZE], int *top, char ch) {
+    stack[++(*top)][0] = ch;
+    stack[*top][1] = '\0';
 }
 
-int is_operator(char ch) {
-    return (ch == '+' || ch == '-' || ch == '*' || ch == '/');
+void pop(char stack[][SIZE], int *top, char *operand) {
+    strcpy(operand, stack[*top]);
+    (*top)--;
 }
 
-int precedence(char ch) {
-    if (ch == '+' || ch == '-')
-        return 1;
-    if (ch == '*' || ch == '/')
-        return 2;
-    return 0;
-}
+char* postfixToInfix(char* postfix) {
+    char stack[SIZE][SIZE];
+    int top = -1;
 
-void convert_to_infix(char *postfix) {
-    char *infix = (char *)malloc((strlen(postfix) + 1) * sizeof(char));
-    int i = 0, j = 0;
-
-    while (postfix[i] != '\0') {
-        if (isalnum(postfix[i])) {
-            infix[j++] = postfix[i++];
-        } else if (is_operator(postfix[i])) {
-            char op2 = pop();
-            char op1 = pop();
-            infix[j++] = '(';
-            infix[j++] = op1;
-            infix[j++] = postfix[i++];
-            infix[j++] = op2;
-            infix[j++] = ')';
-            push(infix[j - 1]); // Push the result back onto the stack
+    int len = strlen(postfix);
+    for (int i = 0; i < len; i++) {
+        if (isOperand(postfix[i])) {
+            push(stack, &top, postfix[i]);
         } else {
-            // Skip spaces
-            i++;
+            char operand1[SIZE], operand2[SIZE];
+            pop(stack, &top, operand1);
+            pop(stack, &top, operand2);
+            sprintf(stack[++top], "(%c%c%c)", operand2[0], postfix[i], operand1[0]);
         }
     }
-
-    infix[j] = '\0';
-    printf("Postfix: %s\n", postfix);
-    printf("Infix: %s\n", infix);
-    free(infix);
+    return strdup(stack[top]);
 }
 
 int main() {
-    char postfix[SIZE];
-
-    printf("Enter the postfix expression: ");
-    scanf("%s", postfix);
-
-    convert_to_infix(postfix);
-
+    char postfix[] = "abc/-ad/e-*";
+    char* infix = postfixToInfix(postfix);
+    printf("Postfix expression: %s\n", postfix);
+    printf("Infix expression: %s\n", infix);
+    free(infix);
     return 0;
 }
+
