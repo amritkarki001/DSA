@@ -1,13 +1,21 @@
 
 
-#include <stdion.h>
+#include <stdio.h>
 #include <conio.h>
-
-int main()
+int sumnatural(int N)
 {
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    printf("Factorial of %d = %d", n, factorial(n));
-    return 0;
+	if (N==0)
+	{
+		return N;
+	}
+	else 
+	{
+		return N+sumnatural(N-1);
+	}
+}
+
+void main()
+{
+	int r=sumnatural(5);
+	printf("%d\n",r);
 }
