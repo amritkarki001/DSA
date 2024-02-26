@@ -27,7 +27,6 @@ void main()
 {
 	int m[10]={2,4,5,8,9,10};
 	BinarySearch(m,8,10,9);
-	getch();
 	
 }
 
