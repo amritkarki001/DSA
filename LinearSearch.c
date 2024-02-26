@@ -20,7 +20,7 @@ int LinearSearch(int l[],int k,int N)
 void main()
 {
 	int l[20]={2,4,5,8,9,10};
-	LinearSearch(l,10,20);
+	LinearSearch(l,15,20);
 	getch();
 	
 }
