@@ -11,13 +11,16 @@ void insertionsort(int A[],int N)
 		A[j]=tmp;
 	}
 }
-void main()
-int a[10];
-int i;
-{	printf("\nSorted List in Ascending order:");
-		for (i=0; i<=N-1; i++)	{
-			printf(" %d ",array[i]);
-		}
-
-return 0;
+//main function
+int main()
+{
+	int array[9]={9,6,5,0,8,2,7,1,3};
+	int i;
+	insertionsort(array,9);
+	printf("\nSorted List in Ascending order:");
+	for (i=0; i<=8; i++)
+	{
+		printf(" %d ",array[i]);
+	}
+	return 0;
 }
