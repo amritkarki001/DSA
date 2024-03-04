@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 int partition(int number[25], int first, int last) {
     int x = number[last];
