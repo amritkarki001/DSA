@@ -22,6 +22,7 @@ void main()
 	int A[50]={23,29,15,19,31,7,9,5,2};
 	int i;
 	shellsort(A,10);
+	printf("Sorted lists: ");
 	for(i=1;i<10;i++)
 	{
 		printf(" %d ",A[i]);
