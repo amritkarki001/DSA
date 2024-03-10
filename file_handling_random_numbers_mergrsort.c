@@ -40,5 +40,5 @@ void main()
     }
     fclose(fptr);
     printf("Data sorted and written to file successfully!\n");
-    getch();
+   
 }

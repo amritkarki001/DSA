@@ -15,13 +15,13 @@ void main()
         printf("Empty File!");
         exit(1);
     }
-    for (i = 0; i < 1000; i++)
+    for (i = 0; i < 100000; i++)
     {
         n = rand() % 4000 + 1;
         fprintf(fptr, "%d\n", n);
     }
     fclose(fptr);
     printf("Data written to file successfully!\n");
-    getch();
+   
 }
 
