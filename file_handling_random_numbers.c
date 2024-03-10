@@ -1,6 +1,7 @@
 //WAP in C that (i)generates 1000 random numbers in the range (1-4000) and writes to a file
 #include <stdio.h>
 #include <conio.h>
+#include <math.h>
 #include <stdlib.h>
 
 
@@ -14,7 +15,6 @@ void main()
         printf("Empty File!");
         exit(1);
     }
-    srand(time(0));
     for (i = 0; i < 1000; i++)
     {
         n = rand() % 4000 + 1;
