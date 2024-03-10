@@ -74,4 +74,13 @@ int main() {
     return 0;
 }
 
-
+//writh the algorithm
+//1. Start
+//2. Declare the function merge with parameters A[], l, m, and r
+//3. Declare the variables i, j, k, n1, and n2
+//4. Declare the arrays L and R of size n1 and n2
+//5. Copy the data to temp arrays L[] and R[]
+//6. Merge the temp arrays back into arr[l..r]
+//7. Copy the remaining elements of L[], if there are any
+//8. Copy the remaining elements of R[], if there are any
+//9. End
