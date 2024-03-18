@@ -1,3 +1,5 @@
+//write a program in c that do linear cearch
+
 #include <stdio.h>
 #include <conio.h>
 
@@ -25,3 +27,4 @@ void main()
 	
 }
 
+//algorithms:
