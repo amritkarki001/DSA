@@ -1,4 +1,4 @@
-//fibonacci using recursion
+//solving or finding fibonacci using recursion
 #include <stdio.h>
 
 int fib(int);

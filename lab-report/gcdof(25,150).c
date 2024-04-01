@@ -1,4 +1,4 @@
-//gcd of two numbers using recursion
+//gcd of two numbers recursively
 #include <stdio.h>
 int gcd(int a, int b)
 {
