@@ -1,4 +1,4 @@
-///BFS of a graph
+///Breaddth First transversal of a graph
 
 #include <stdio.h>
 #include <conio.h>
