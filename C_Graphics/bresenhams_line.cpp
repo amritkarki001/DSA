@@ -1,5 +1,4 @@
 //write a program to draw a line using Bresenham's line drawing algorithm.
-
 #include<stdio.h>
 #include<conio.h>
 #include<graphics.h>
