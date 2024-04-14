@@ -99,9 +99,9 @@ VFn^@mmnDH:D[V?zdU@XFb3
 !s100 _TKZCWg1?T70zDA8I238Q1
 R6
 32
-Z23 !s110 1713056823
+Z23 !s110 1713057229
 !i10b 1
-Z24 !s108 1713056823.000000
+Z24 !s108 1713057228.000000
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/2nd sem/OOP/3rd/DSA/DSA/CA/fulladder.vhd|
 Z26 !s107 D:/2nd sem/OOP/3rd/DSA/DSA/CA/fulladder.vhd|
 !i113 1
@@ -200,6 +200,27 @@ R35
 R36
 R18
 R19
+!i113 1
+R11
+R12
+Esub4
+w1713058670
+R1
+R2
+R3
+8D:/2nd sem/OOP/3rd/DSA/DSA/CA/sub.vhd
+FD:/2nd sem/OOP/3rd/DSA/DSA/CA/sub.vhd
+l0
+L4
+VL99jOe7e]24K1V:[FFnzI1
+!s100 `QHBlg7LgOCCg5Ik@B:=g1
+R6
+32
+!s110 1713058680
+!i10b 1
+!s108 1713058680.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/2nd sem/OOP/3rd/DSA/DSA/CA/sub.vhd|
+!s107 D:/2nd sem/OOP/3rd/DSA/DSA/CA/sub.vhd|
 !i113 1
 R11
 R12
