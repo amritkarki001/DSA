@@ -1,0 +1,25 @@
+{D:/2nd sem/OOP/3rd/DSA/DSA/CA/ORGate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/2nd sem/OOP/3rd/DSA/DSA/CA/ORGate.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ORGATE
+-- Compiling architecture RTL of ORGATE
+
+} {} {}} {D:/2nd sem/OOP/3rd/DSA/DSA/CA/OR + AND.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/2nd sem/OOP/3rd/DSA/DSA/CA/OR + AND.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ANDORGATE
+-- Compiling architecture RTL of ANDORGATE
+
+} {} {}} {D:/2nd sem/OOP/3rd/DSA/DSA/CA/ANDGATE.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/2nd sem/OOP/3rd/DSA/DSA/CA/ANDGATE.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ANDGATE
+-- Compiling architecture RTL of ANDGATE
+
+} {} {}}

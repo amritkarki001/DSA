@@ -1,0 +1,226 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Eandgate
+Z0 w1712884253
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/2nd sem/OOP/3rd/DSA/DSA/CA
+Z4 8D:/2nd sem/OOP/3rd/DSA/DSA/CA/ANDGATE.vhd
+Z5 FD:/2nd sem/OOP/3rd/DSA/DSA/CA/ANDGATE.vhd
+l0
+L8
+VV]5Ez2D2[HUg:VFRgXSOT1
+!s100 mD2S:Y`B4Ncal9XAb@QNC2
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1712884260
+!i10b 1
+Z8 !s108 1712884260.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/2nd sem/OOP/3rd/DSA/DSA/CA/ANDGATE.vhd|
+Z10 !s107 D:/2nd sem/OOP/3rd/DSA/DSA/CA/ANDGATE.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+DEx4 work 7 andgate 0 22 V]5Ez2D2[HUg:VFRgXSOT1
+l17
+L16
+Vc<4GoS43LIL8BjPTPTW[o0
+!s100 bgZJlczN;n;[4XZPCzPW?3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eandorgate
+Z13 w1712885607
+R1
+R2
+R3
+Z14 8D:/2nd sem/OOP/3rd/DSA/DSA/CA/OR + AND.vhd
+Z15 FD:/2nd sem/OOP/3rd/DSA/DSA/CA/OR + AND.vhd
+l0
+L9
+VRfjDo=:=gk<Th<`ODUmhJ2
+!s100 6Ldj@VW@J7Rm]HB^64m1=0
+R6
+32
+Z16 !s110 1712885611
+!i10b 1
+Z17 !s108 1712885611.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/2nd sem/OOP/3rd/DSA/DSA/CA/OR + AND.vhd|
+Z19 !s107 D:/2nd sem/OOP/3rd/DSA/DSA/CA/OR + AND.vhd|
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 9 andorgate 0 22 RfjDo=:=gk<Th<`ODUmhJ2
+l20
+L18
+VKTZ2ZDP4eI^lh8g_LM5M90
+!s100 EbdNIj2Fc1hhgI7LfHeI`3
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Efadder
+Z20 w1713056818
+R1
+R2
+R3
+Z21 8D:/2nd sem/OOP/3rd/DSA/DSA/CA/fulladder.vhd
+Z22 FD:/2nd sem/OOP/3rd/DSA/DSA/CA/fulladder.vhd
+l0
+L5
+VFn^@mmnDH:D[V?zdU@XFb3
+!s100 _TKZCWg1?T70zDA8I238Q1
+R6
+32
+Z23 !s110 1713056823
+!i10b 1
+Z24 !s108 1713056823.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/2nd sem/OOP/3rd/DSA/DSA/CA/fulladder.vhd|
+Z26 !s107 D:/2nd sem/OOP/3rd/DSA/DSA/CA/fulladder.vhd|
+!i113 1
+R11
+R12
+Afull
+R1
+R2
+DEx4 work 6 fadder 0 22 Fn^@mmnDH:D[V?zdU@XFb3
+l16
+L14
+VQbXd_>2CGMVQZ3i]1JGO23
+!s100 3>j3Y;O2jY=XGBOBN`KSP1
+R6
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Efull_adder_vhdl_code
+Z27 w1713056255
+R1
+R2
+R3
+Z28 8D:/2nd sem/OOP/3rd/DSA/DSA/CA/full_adder.vhd
+Z29 FD:/2nd sem/OOP/3rd/DSA/DSA/CA/full_adder.vhd
+l0
+L5
+Vf^@[j`Vc`Aj^6dW>^Do7P2
+!s100 UVm]c1`0od@gQ=NN6T8HM3
+R6
+32
+Z30 !s110 1713056260
+!i10b 1
+Z31 !s108 1713056260.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/2nd sem/OOP/3rd/DSA/DSA/CA/full_adder.vhd|
+Z33 !s107 D:/2nd sem/OOP/3rd/DSA/DSA/CA/full_adder.vhd|
+!i113 1
+R11
+R12
+Agate_level
+R1
+R2
+DEx4 work 20 full_adder_vhdl_code 0 22 f^@[j`Vc`Aj^6dW>^Do7P2
+l14
+L13
+Vj^OX@Zj3S1@AAVYkW0fVA0
+!s100 a2gC5gUi<ij^_EZKBkK2z1
+R6
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R11
+R12
+Eorgate
+Z34 w1712885529
+R1
+R2
+R3
+R14
+R15
+l0
+L9
+Vj[2@2<HMHX982Ii4oWNV13
+!s100 2KPXSMIMP7g`lOA?B;D2l0
+R6
+32
+Z35 !s110 1712885564
+!i10b 1
+Z36 !s108 1712885564.000000
+R18
+R19
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 6 orgate 0 22 j[2@2<HMHX982Ii4oWNV13
+l20
+L18
+VDKlLJ=1hd9E3]>Tc<chnW2
+!s100 3hIbojWUHb9D]EOz?VSzT2
+R6
+32
+R35
+!i10b 1
+R36
+R18
+R19
+!i113 1
+R11
+R12
+Etestbench_full_adder
+R27
+R1
+R2
+R3
+R28
+R29
+l0
+L23
+V_Xe4eaRhbc8R`XMeYeDS21
+!s100 _lR>68l4BCCKERzR4GjiU1
+R6
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R11
+R12

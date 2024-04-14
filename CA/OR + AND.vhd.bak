@@ -1,0 +1,23 @@
+
+
+-- Import std_logic library
+
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+--Entity
+Entity ORGATE is
+port(A:in std_logic;
+B:in std_logic;
+C:in std_logic;
+Y:out std_logic
+);
+end ORGATE;
+
+--Architecture
+Architecture RTL of ORGATE is
+Signal D:std_logic;
+begin
+D<=A or B;
+Y<=C And D;
+end RTL;
