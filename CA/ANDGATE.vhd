@@ -1,4 +1,4 @@
-
+//objective: To implement AND gate using VHDL
 -- Import std_logic library
 
 Library IEEE;

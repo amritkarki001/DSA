@@ -1,3 +1,4 @@
+//to implement full adder using xor and or gates
 Library IEEE;
 use IEEE.std_logic_1164.all;
 
